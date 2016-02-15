@@ -1,0 +1,534 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"geoph",
+				"geophysical"
+			],
+			[
+				"member",
+				"member_methods"
+			],
+			[
+				"geop",
+				"geophysical"
+			],
+			[
+				"geo",
+				"geophysical_methods"
+			],
+			[
+				"de",
+				"delete_continent_nodes"
+			],
+			[
+				"dele",
+				"delete_country_nodes"
+			],
+			[
+				"neo4j",
+				"Neo4j"
+			],
+			[
+				"Neo4j",
+				"Neo4j"
+			],
+			[
+				"neo",
+				"neo4j_service_check"
+			],
+			[
+				"publisher_count",
+				"publisher_base_country"
+			],
+			[
+				"journa",
+				"journal_ISSN"
+			],
+			[
+				"app",
+				"appFunction"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"box",
+				"box"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"token",
+				"token_reponses"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"show",
+				"showcase-content"
+			],
+			[
+				"alloca",
+				"allocate-content"
+			],
+			[
+				"ssh",
+				"ssh-content"
+			],
+			[
+				"user",
+				"user_count"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 217.0,
+		"last_filter": "menu",
+		"selected_items":
+		[
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"save",
+				"Origami: Save Current Layout"
+			],
+			[
+				"create pane on the rigt",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"destroy cr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"create pane a",
+				"Origami: Create Pane Above"
+			],
+			[
+				"destroy c",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git:",
+				"Git: Add All"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"save ",
+				"Origami: Save Current Layout"
+			],
+			[
+				"dest",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"create pane",
+				"Origami: Create Pane Below"
+			],
+			[
+				"create pane be",
+				"Origami: Create Pane Below"
+			],
+			[
+				"create pane rig",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"destro",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"me",
+				"View: Toggle Menu"
+			],
+			[
+				"git",
+				"Git: Add All"
+			],
+			[
+				"git:add",
+				"Git: Add All"
+			],
+			[
+				"git:comm",
+				"Git: Commit history"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git: comm",
+				"Git: Commit"
+			],
+			[
+				"git: add",
+				"Git: Add Current File"
+			],
+			[
+				"vi",
+				"View: Toggle Menu"
+			],
+			[
+				"git: push",
+				"Git: Push"
+			],
+			[
+				"git: pull",
+				"Git: Pull"
+			],
+			[
+				"git: ad",
+				"Git: Add Current File"
+			],
+			[
+				"git: commit",
+				"Git: Commit"
+			],
+			[
+				"git: co",
+				"Git: Commit"
+			],
+			[
+				"git: com",
+				"Git: Commit"
+			],
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 325.0
+	},
+	"console":
+	{
+		"height": 194.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"ls",
+			"cls",
+			"clear",
+			"exit",
+			"dir",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cyberbeast/Documents/Playground/astroml-distroloader"
+	],
+	"file_history":
+	[
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/entity/entity_methods.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/bin/start_api.sh",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/computed/computed_methods.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/member/member_methods.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/geophysical/geophysical_methods.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/scibase_graph_api.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/bin/deploy.sh",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/API Documentation",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/__init__.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/__init__.py",
+		"/home/cyberbeast/Documents/Playground/hug/hello.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/member/init.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/geophysical/init.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/entity/init.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/modules/computed/init.py",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/bin/test.sh",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/deploy.sh",
+		"/home/cyberbeast/Documents/SciBase/SciBaseGraphDB/README.md",
+		"/home/cyberbeast/Documents/SciBase/SciBaseVizKit/index.html",
+		"/home/cyberbeast/Documents/fadworthy/README.md",
+		"/home/cyberbeast/Downloads/tabula/README.txt",
+		"/home/cyberbeast/Downloads/tabula-HVS - FHRAI Indian Hotel Industry Survey 2013-2014.csv",
+		"/home/cyberbeast/Documents/vscf/Create_VM.sh",
+		"/home/cyberbeast/Documents/vscf/index.js",
+		"/home/cyberbeast/Documents/vscf/public/index.html",
+		"/home/cyberbeast/Documents/vscf/public/css/tenzin-demo.css",
+		"/home/cyberbeast/Documents/vscf/public/css/tenzin.css",
+		"/home/cyberbeast/Documents/vscf/script.sh",
+		"/home/cyberbeast/Downloads/CreativeLoadingEffects/index.html",
+		"/home/cyberbeast/Documents/Tutorials/child/script.sh",
+		"/home/cyberbeast/Documents/Tutorials/web_rpc/server.js",
+		"/home/cyberbeast/Documents/Tutorials/web_rpc/server.ks",
+		"/home/cyberbeast/Documents/vscf/node_modules/tty.js/static/tty.js",
+		"/home/cyberbeast/Documents/Tutorials/ssh-n/node_modules/tty.js/static/tty.js",
+		"/home/cyberbeast/Documents/vscf/node_modules/tty.js/static/index.html",
+		"/home/cyberbeast/Documents/Tutorials/ssh-n/index.js",
+		"/home/cyberbeast/Documents/Tutorials/ssh-n/node_modules/tty.js/static/index.html",
+		"/home/cyberbeast/Documents/Tutorials/ssh-n/node_modules/tty.js/lib/tty.js",
+		"/home/cyberbeast/Documents/Tutorials/pty/server.js",
+		"/home/cyberbeast/Documents/Tutorials/pty/client.js",
+		"/home/cyberbeast/Documents/Tutorials/pty/index.html",
+		"/home/cyberbeast/Documents/Tutorials/pty/index.js",
+		"/home/cyberbeast/Documents/Tutorials/pty/package.json",
+		"/home/cyberbeast/Documents/vscf/public/main.html",
+		"/home/cyberbeast/Documents/Tutorials/pty/public/ttrm.js",
+		"/home/cyberbeast/Documents/Tutorials/pty/public/index.html",
+		"/home/cyberbeast/Documents/vscf/package.json",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/index.js",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/package.json",
+		"/home/cyberbeast/Documents/vscf/public/login.html",
+		"/home/cyberbeast/Documents/TripCorridor/website/faq.html",
+		"/home/cyberbeast/Documents/TripCorridor/website/index.html",
+		"/home/cyberbeast/Documents/TripCorridor/website/index_new.html",
+		"/home/cyberbeast/Documents/TripCorridor/website/faq",
+		"/home/cyberbeast/Documents/TripCorridor/webs",
+		"/home/cyberbeast/Downloads/ssh-n/node_modules/tty.js/static/style.css",
+		"/home/cyberbeast/Downloads/ssh-n/index.js",
+		"/home/cyberbeast/Downloads/ssh-n/node_modules/tty.js/static/index.html",
+		"/home/cyberbeast/Documents/TripCorridor/website/.git/config",
+		"/home/cyberbeast/Downloads/ssh-n/package.json",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/public/css/default.css",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/public/index2.html",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/public/index.html",
+		"/home/cyberbeast/Downloads/tty.js-master/lib/config.js",
+		"/home/cyberbeast/Downloads/tty.js-master/lib/tty.js",
+		"/home/cyberbeast/Downloads/tty.js-master/index.js",
+		"/home/cyberbeast/Downloads/tty.js-master/package.json",
+		"/home/cyberbeast/Downloads/tty.js-master/lib/tty.js/config.json",
+		"/home/cyberbeast/Downloads/tty.js-master/lib/tty.js/config.js",
+		"/home/cyberbeast/Downloads/ModalWindowEffects/index.html",
+		"/home/cyberbeast/Downloads/DialogEffects/susan.html",
+		"/home/cyberbeast/Downloads/FullscreenOverlayStyles/index12.html",
+		"/home/cyberbeast/Documents/vscf/public/css/style12.css",
+		"/home/cyberbeast/Downloads/TextInputEffects/index.html",
+		"/home/cyberbeast/Documents/vscf/public/allocate.html",
+		"/home/cyberbeast/Downloads/ButtonStylesInspiration/index.html",
+		"/home/cyberbeast/Downloads/SelectInspiration/index2.html",
+		"/home/cyberbeast/Documents/vscf/developers.txt",
+		"/home/cyberbeast/Downloads/TextInputEffects/js/classie.js",
+		"/home/cyberbeast/Downloads/TextInputEffects/img/search.svg",
+		"/home/cyberbeast/Documents/vscf/login.html",
+		"/home/cyberbeast/Documents/vscf/css/style.css",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/cyberbeast_playground/auth/package.json",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/cyberbeast_playground/chatbot/alice.aiml",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/cyberbeast_playground/chatbot/chatbot.py",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/cyberbeast_playground/chatbot/aiml-en-us-foundation-alice/ai.aiml",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/cyberbeast_playground/chatbot/aiml-en-us-foundation-alice/alice.aiml",
+		"/home/cyberbeast/Documents/TripCorridor/website/manifest.json",
+		"/home/cyberbeast/Documents/TripCorridor/website/inde",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/public/js/submit.js",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/index2.html",
+		"/home/cyberbeast/Documents/Tutorials/nodejs/program.js",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/css/demo.css",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/css/set2.css",
+		"/usr/share/backgrounds/elementaryos-default",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/ui_test/index.html",
+		"/home/cyberbeast/Documents/Tutorials/nodejs/mymodule.js",
+		"/home/cyberbeast/.bashrc",
+		"/home/cyberbeast/.node/lib/node_modules/learnyounode/program.js",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/.git/config",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/contributors.txt",
+		"/home/cyberbeast/Documents/TripCorridor/webapp/README.txxt",
+		"/home/cyberbeast/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/home/cyberbeast/Documents/vscf/public/css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"sock",
+			"dest",
+			"write",
+			"user",
+			"dirname",
+			"data",
+			"8280",
+			"8180",
+			"index",
+			"users",
+			"username",
+			"auth",
+			"font-size",
+			"TRANSPARENT",
+			"cart",
+			"form-horizontal",
+			"font-family",
+			"input--sh",
+			"content",
+			"msg",
+			".bg-color",
+			"input--filled",
+			"shoko input--filled",
+			"shok"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"8380",
+			"8280"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 70.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "astroml-distroloader.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
