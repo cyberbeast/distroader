@@ -11,6 +11,50 @@ echo -e "
 ░ ░     ░ ░      ░         ░  ░   ░      ░         ░  ░     ░  ░      ░           
 ░       ░ ░           ░                       ░                                   
 "
+function new_worker() {
+	printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' "-";
+	
+	sshpass -p $3 ssh $1 -l $2 << EOF
+	worker_setup;
+	EOF
+
+	printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' "-";
+
+}
+function server_setup() {
+	printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' "-";
+	echo -e "
+┌─┐┌─┐┬─┐┬  ┬┌─┐┬─┐  ┌─┐┌─┐┌┬┐┬ ┬┌─┐
+└─┐├┤ ├┬┘└┐┌┘├┤ ├┬┘  └─┐├┤  │ │ │├─┘
+└─┘└─┘┴└─ └┘ └─┘┴└─  └─┘└─┘ ┴ └─┘┴  
+	"
+	printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' "-";
+	printf "Please be patient for the entire duration of the script. cyberbeast's minions are putting together a lot of things together! \n \n"
+
+	printf "python3-pip"
+	pip3 --version &> /dev/null;
+	check_status_code=$?;
+	case "$check_status_code" in
+		0)	printf " : detected! ";
+			;;
+		*) 	printf " : not found. Installing NOW! ";
+			sudo apt-get install python3-pip;
+			;;
+	esac
+	printf ": DONE! \n"
+
+	printf "sshpass"
+	type sshpass &> /dev/null;
+	check_status_code=$?;
+	case "$check_status_code" in
+		0)	printf " : detected! ";
+			;;
+		*) 	printf " : not found. Installing NOW! ";
+			sudo apt-get install sshpass;
+			;;
+	esac
+	printf ": DONE! \n"
+}
 
 function worker_setup() {
 	printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' "-";
@@ -116,20 +160,51 @@ if (( $EUID != 0 )); then
 	# Execute setup script with superuser access.
 	sudo ./setup.sh;
 else
-	echo -e "
-██╗    ██╗        ██╗    ███████╗
-██║    ██║       ██╔╝    ██╔════╝
-██║ █╗ ██║      ██╔╝     ███████╗
-██║███╗██║     ██╔╝      ╚════██║
-╚███╔███╔╝    ██╔╝       ███████║
- ╚══╝╚══╝     ╚═╝        ╚══════╝
+	if $1 == "worker"; then
+		echo -e "
+██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗███████╗██████╗                                     
+██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝██╔════╝██╔══██╗                                    
+██║ █╗ ██║██║   ██║██████╔╝█████╔╝ █████╗  ██████╔╝                                    
+██║███╗██║██║   ██║██╔══██╗██╔═██╗ ██╔══╝  ██╔══██╗                                    
+╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗███████╗██║  ██║                                    
+ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝                                    
+                                                                                       
+ ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗     ███╗   ███╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝     ████╗ ████║██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗    ██╔████╔██║██║   ██║██║  ██║█████╗  
+██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║    ██║╚██╔╝██║██║   ██║██║  ██║██╔══╝  
+╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝    ██║ ╚═╝ ██║╚██████╔╝██████╔╝███████╗
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝     ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
                                  
 	"
-	printf "Choose responsibly! W(orker) or S(erver)!: ";	
-	select response in "W" "S"; do
-    case $response in
-        W ) worker_setup;;
-        S ) server_setup;;
-    esac
+		while :
+		do
+			response=read -p "Add new worker? (Y/N)";
+			case $response in
+				Y)	ip_addr=read -p "IP ADDRESS: ";
+					username=read -p "USERNAME: ";
+					password=read -p "PASSWORD: ";
+					new_worker ip_addr username password;;
+				N)	break;;
+			esac
+		done
+	else
+		echo -e "
+███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗                                       
+██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗                                      
+███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝                                      
+╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗                                      
+███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║                                      
+╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝                                      
+                                                                                       
+ ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗     ███╗   ███╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝     ████╗ ████║██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗    ██╔████╔██║██║   ██║██║  ██║█████╗  
+██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║    ██║╚██╔╝██║██║   ██║██║  ██║██╔══╝  
+╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝    ██║ ╚═╝ ██║╚██████╔╝██████╔╝███████╗
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝     ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
+                                                                                       
+      	"
+		server_setup;
 fi
 
